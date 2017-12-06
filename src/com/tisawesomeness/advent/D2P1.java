@@ -17,9 +17,9 @@ public class D2P1 {
 		int sum = 0;
 		String[] lines = input.split("\\n");
 		for (String s : lines) {
-			int highest = Integer.MIN_VALUE;
-			int lowest = Integer.MAX_VALUE;
-			for (String num : s.split("[^0-9]")) {
+			int highest = Integer.MIN_VALUE; //Any value will be higher than this
+			int lowest = Integer.MAX_VALUE; //Any value will be lower than this
+			for (String num : s.split("[^0-9]")) { //Separate into individual numbers
 				if (!num.equals("")) {
 					int i = Integer.valueOf(num);
 					if (i < lowest) lowest = i;
