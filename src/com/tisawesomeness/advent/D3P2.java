@@ -64,8 +64,8 @@ public class D3P2 {
 	
 	//Coordinate class, two coordinates are equal if their x values and y values are equal
 	private static class Coordinate {
-		int x;
-		int y;
+		private int x;
+		private int y;
 		public Coordinate(int x, int y) {
 			this.x = x;
 			this.y = y;
