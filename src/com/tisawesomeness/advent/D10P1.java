@@ -13,8 +13,7 @@ public class D10P1 {
 		for (int i = 0; i < 256; i++) list[i] = i;
 		int pos = 0;
 		int skip = 0;
-		String[] lengths = input.split(",");
-		for (String s : lengths) {
+		for (String s : input.split(",")) {
 			int length = Integer.valueOf(s);
 			reverse(list, pos, length);
 			pos = correct(pos + length + skip);

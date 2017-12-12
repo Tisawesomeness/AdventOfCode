@@ -15,9 +15,8 @@ public class D8P1 {
 		}
 		scan.close();
 		
-		String[] lines = input.split("\\n");
 		HashMap<String, Integer> registers = new HashMap<String, Integer>();
-		for (String line : lines) {
+		for (String line : input.split("\\n")) {
 			String[] words = line.split(" ");
 			//First number in if statement
 			int compare = 0;

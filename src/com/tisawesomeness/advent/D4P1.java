@@ -17,8 +17,7 @@ public class D4P1 {
 		scan.close();
 		
 		int count = 0;
-		String[] lines = input.split("\\n");
-		for (String s : lines) {
+		for (String s : input.split("\\n")) {
 			if (allUnique(s.split(" "))) count++; //If password is valid
 		}
 		System.out.println(count);

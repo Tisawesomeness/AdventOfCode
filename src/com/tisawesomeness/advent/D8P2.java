@@ -15,10 +15,9 @@ public class D8P2 {
 		}
 		scan.close();
 		
-		String[] lines = input.split("\\n");
 		HashMap<String, Integer> registers = new HashMap<String, Integer>();
 		int highest = Integer.MIN_VALUE;
-		for (String line : lines) {
+		for (String line : input.split("\\n")) {
 			String[] words = line.split(" ");
 			//First number in if statement
 			int compare = 0;

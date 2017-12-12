@@ -15,8 +15,7 @@ public class D2P2 {
 		scan.close();
 		
 		int sum = 0;
-		String[] lines = input.split("\\n");
-		for (String s : lines) {
+		for (String s : input.split("\\n")) {
 			String[] numStr = s.split("[^0-9]");
 			//Create list of ints
 			int[] nums = new int[numStr.length];

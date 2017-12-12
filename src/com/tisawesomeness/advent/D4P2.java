@@ -18,8 +18,7 @@ public class D4P2 {
 		scan.close();
 		
 		int count = 0;
-		String[] lines = input.split("\\n");
-		for (String s : lines) {
+		for (String s : input.split("\\n")) {
 			if (allUnique(s.split(" "))) count++;
 		}
 		System.out.println(count);
